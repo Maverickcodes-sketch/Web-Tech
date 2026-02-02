@@ -1,1 +1,3 @@
 Scope and mutability
+npx create -react-app {name}
+npx create vite@latest

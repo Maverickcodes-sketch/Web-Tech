@@ -38,8 +38,30 @@
 // {
 //     console.log(i,items[i]);
 // }
-let obj={name:"Alice",age:25,city:"New York",hobby: "Traveling to Offbeat places"};
-for(const key in obj)
+// let obj={name:"Alice",age:25,city:"New York",hobby: "Traveling to Offbeat places"};
+// for(const key in obj)//returns indexes or keys
+// {
+//     console.log(key+":"+obj[key]);
+// }
+// const beverage=["Chai","Coffee","Juice"];
+// for(const item of beverage)//return values
+// {
+//     console.log(item);
+// }
+// greet("Shaswat"); //hoisting 
+// function greet(name)
+// {
+//     console.log(`Hello, ${name}! Welcome to the JavaScript world.`);
+// }
+const factorial=function(n)
 {
-    console.log(key+":"+obj[key]);
+    if(n==1||n==0)
+    {
+        return 1;
+    }
+    else
+    {
+        return n*factorial(n-1);
+    }
 }
+console.log(factorial(7));
