@@ -16,7 +16,7 @@ const App = () => {
     {/* {fre && <Toast a={obj}/>} */}
     {/* {fre && <Toast a={ap}/>} */}
     {/* {fre && <Toast a={obj.name} b={obj.age}/>} */ }
-    {fre && <Toast name="Shaswwat" age={22}/>}
+    {fre && <Toast name="Shaswwat" age={22} color="info" />}
     </div>
 
 
