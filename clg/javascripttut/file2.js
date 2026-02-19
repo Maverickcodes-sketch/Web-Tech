@@ -1,3 +1,5 @@
+let greeting = prompt("Hello, World!",[100]);
+alert("You entered: " + greeting);
 var user = "Guest";
 function greetUser2(){
     console.log("Welcome, " + user + "!");
