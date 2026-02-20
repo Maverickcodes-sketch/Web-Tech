@@ -3,6 +3,7 @@ int add(int a, int b) {
 }
 
 int subtract(int a, int b) => a - b;
+
 class Person {
   String name;
   int age;
@@ -12,14 +13,19 @@ class Person {
     print("Age: " + age.toString());
   }
 }
+
+double  multiply(double a, double b) =>a*b;
+
+
 class Student extends Person {
   String Branch;
   Student(String name, int age, this.Branch) : super(name, age);
   void display() {
     super.display();
     print("Branch: " + Branch);
-  } 
+  }
 }
+
 Future<void> fetchData() async {
   await Future.delayed(Duration(seconds: 2));
   print("Data fetched");
@@ -42,4 +48,5 @@ void main() {
   Student s1 = Student("Alice", 20, "Computer Science");
   s1.display();
   fetchData();
+ print(name??"Name is null");
 }
