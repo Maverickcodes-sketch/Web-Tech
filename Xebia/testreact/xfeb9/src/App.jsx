@@ -1,7 +1,7 @@
 import React from "react";
 import Wrapper from "./components/Wrapper";
 import UserCard from "./components/UserCard";
-import { useState } from "react";
+import { useState,use } from "react";
 function App() {
   const [isgame, setgame] = useState("Cricket");
   const [cricketer, setCricketer] = useState([
@@ -16,6 +16,7 @@ function App() {
     { name: "Neymar Jr", age: 32, city: "Paris", team: "PSG" },
     { name: "Kylian Mbappe", age: 25, city: "Paris", team: "PSG" },
   ]);
+
   const onclick = () => {
     if (isgame === "Cricket") {
       setgame("Football");
